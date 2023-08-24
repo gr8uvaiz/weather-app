@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@media only screen and (max-width: 800px) {
+    #date-day{
+       flex-direction: column;
+    }
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.422); */
+    background: url('https://images.unsplash.com/photo-1579450442686-e78d1077b218?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=812&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+::placeholder{
+    color: black;
+}
+input{
+    background: transparent;
+    color: black;
+}
+#main{
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#weather{
+    display: none;
+    color: white;
+    height: 70%;
+    width: 60%;
+    border-radius: 30px;
+    transition: all ease-in-out 0.3s;
+    /* box-shadow: -4px 4px 8px rgb(75, 74, 74); */
+    background-color: rgb(229, 206, 252);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#search-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#search-input{
+    border-radius: 20px;
+    border: 1px solid black;
+    outline: none;
+    padding: 12px;
+    width: 30%;
+}
+#search-bar i{
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease-in 0.5s;
+}
+#search-bar i:hover{
+    background-color: #1286cc;
+}
+#weather-info,#date-time{
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+#weather-info{
+    align-items: flex-end;
+    text-align: center;
+}
+#weather-info #city-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+#weather-info #weather-measure{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+#weather-info #weather-style{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#date-time{
+    gap: 5px;
+    justify-content: flex-end;
+}
+#date-day{
+    padding: 12px;
+    width: 40%;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+    border: 1px solid black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all ease-in 0.5s;
+    cursor: pointer;
+}
+#date-day:hover{
+    background-color: #d7c4d7;
+}
+#time{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#extra-info{
+    font-size: 2rem;
+}
