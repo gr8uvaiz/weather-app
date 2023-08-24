@@ -43,7 +43,7 @@ const getCity =  () =>{
     
 }
 const getWeather = async (city) =>{
-    const api_key = `51532aa70851640ef06df10634514fc3`;
+    const api_key = `{Your API Key}`;
     if(city!=''){
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
     const data = await fetch(url);
